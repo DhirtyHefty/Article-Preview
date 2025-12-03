@@ -8,7 +8,6 @@
 }
 
 img {
-    max-width: 100%;
     display: block;
 }
 
@@ -27,4 +26,77 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 1rem;
+}
+
+.main-container{
+    background-color: var(--LightGrayishBlue);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    
+}
+
+.second-section{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.hero-img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.first-paragraph{
+    color: var(--DesaturatedDarkBlue);
+    font-size: 16px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.second-paragraph{
+    color: var(--GrayishBlue);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.profile-section{
+    display: flex;
+}
+
+.avatar{
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 1rem;
+}
+
+.middle-part{
+    margin: 0 2rem 0 0 ;
+}
+
+.name{
+    color: var(--DesaturatedDarkBlue);
+    font-weight: 700;
+}
+
+.date{
+    color: var(--GrayishBlue);
+}
+
+.share-button{
+    margin-left: auto;
+    background-color: var(--GrayishBlue);
+    border: none;
+    padding: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.share-icon{
+    width: 15px;
+    height: auto;
+    margin: ;
 }
