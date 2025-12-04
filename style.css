@@ -98,6 +98,10 @@ body {
     white-space: nowrap;
 }
 
+.profile-wrapper{
+    
+}
+
 .share-button{
     margin-left: auto;
     background: var(--GrayishBlue);
@@ -124,8 +128,18 @@ body {
     margin: 1rem -1rem 0 -1rem;
 }
 
-.share-popup .hidden{
+.share-popup.hidden{
+    display: none ;
+}
+
+/*hides profile section when active*/
+.profile-section.hidden{
     display: none;
+}
+
+/*active state*/
+.share-button.active{
+    background-color: var(--DesaturatedDarkBlue);
 }
 
 .share-text{
@@ -146,15 +160,9 @@ body {
     height: auto;
 }
 
-/*hides profile section when active*/
-.profile-section.hidden{
-    display: none;
-}
 
-/*active state*/
-.share-button.active{
-    background-color: var(--DesaturatedDarkBlue);
-}
+
+
 @media (min-width: 1024px) {
     .main-container{
         display: flex;
