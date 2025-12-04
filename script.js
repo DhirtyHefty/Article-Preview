@@ -4,10 +4,16 @@ const sharePopup = document.querySelector('.share-popup');
 
 shareButtons.forEach(button => {
     button.addEventListener('click', () => {
-        
-        profileWrapper.classList.toggle('hidden');
+        //on mobile
+        if (window.innerWidth < 1024) {
+            profileWrapper.classList.toggle('hidden');
+        }
+
         sharePopup.classList.toggle('hidden');
-        // Toggle active state on all share buttons
-        shareButtons.forEach(btn => btn.classList.toggle('active'));
+        //toggle active state for share button
+        shareButtons.forEach(btn => {
+            btn.classList.toggle('active');
+        });
     });
+            
 });

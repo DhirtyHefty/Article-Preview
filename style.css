@@ -198,11 +198,42 @@ body {
         justify-content: center;
         padding: 2rem;
         margin: 0;
+        position: relative;
     }
 
-    .profile-section{
+    .profile-wrapper{
+        position: relative;
+    }
+
+    .profile-wrapper .hidden{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+    }
+
+    .share-popup{
+        position: absolute;
+        bottom: 100px;
+        right: 30px;
+        margin: 0;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    /*remove second share button*/
+    .share-popup .share-button{
+        display: none;
+    }
+
+    /*arrow pointing down*/
+    .share-popup::after{
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid var(--VeryDarkGrayishBlue);
     }
 }
