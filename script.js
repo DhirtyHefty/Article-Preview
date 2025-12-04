@@ -1,10 +1,13 @@
-const shareButton = document.querySelector('.share-button')
-const profileSection = document.querySelector('.profile-section')
-const sharePopup = document.querySelector('.share-popup')
+const shareButtons = document.querySelectorAll('.share-button');
+const profileWrapper = document.querySelector('.profile-wrapper');
+const sharePopup = document.querySelector('.share-popup');
 
-shareButton.addEventListener('click', () => {
-    shareButton.classList.toggle('active');
-    sharePopup.classList.toggle('hidden');
-    profileSection.classList.toggle('hidden');
-})
-
+shareButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        
+        profileWrapper.classList.toggle('hidden');
+        sharePopup.classList.toggle('hidden');
+        // Toggle active state on all share buttons
+        shareButtons.forEach(btn => btn.classList.toggle('active'));
+    });
+});

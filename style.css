@@ -67,6 +67,8 @@ body {
 
 .profile-section{
     display: flex;
+    align-items: center;
+    flex: 1;
 }
 
 .right-profileSection{
@@ -99,7 +101,12 @@ body {
 }
 
 .profile-wrapper{
-    
+    display: flex;
+    align-items: center;
+}
+
+.profile-wrapper.hidden{
+    display: none;
 }
 
 .share-button{
@@ -108,14 +115,18 @@ body {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    margin: 10px;
+    padding: 10px;
+}
+
+/*active state*/
+.share-button.active{
+    background-color: var(--DesaturatedDarkBlue);
 }
 
 .share-icon{
     width: 15px;
     height: auto;
-    margin: 5px;
-    padding: -5px;
+   
 }
 
 .share-popup{
@@ -132,15 +143,6 @@ body {
     display: none ;
 }
 
-/*hides profile section when active*/
-.profile-section.hidden{
-    display: none;
-}
-
-/*active state*/
-.share-button.active{
-    background-color: var(--DesaturatedDarkBlue);
-}
 
 .share-text{
     text-transform: uppercase;
@@ -151,7 +153,6 @@ body {
 .social-icons{
     display: flex;
     gap: 1rem;
-    align-items: center;
 
 }
 
@@ -159,9 +160,6 @@ body {
     width: 20px;
     height: auto;
 }
-
-
-
 
 @media (min-width: 1024px) {
     .main-container{
