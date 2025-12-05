@@ -30,7 +30,6 @@ body {
 }
 
 .main-container{
-    background-color: var(--LightGrayishBlue);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -89,6 +88,7 @@ body {
 .name{
     color: var(--DesaturatedDarkBlue);
     font-weight: 700;
+    margin-bottom: 5px;
 }
 
 .date{
@@ -111,7 +111,7 @@ body {
 
 .share-button{
     margin-left: auto;
-    background: var(--GrayishBlue);
+    background: var(--LightGrayishBlue);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -120,8 +120,11 @@ body {
 
 /*active state*/
 .share-button.active{
-    background-color: var(--DesaturatedDarkBlue);
+    background-color: var(--GrayishBlue);
 }
+ .share-button:hover{
+    background-color: var(--GrayishBlue);
+ }
 
 .share-icon{
     width: 15px;
@@ -203,10 +206,6 @@ body {
 
     .profile-wrapper{
         position: relative;
-    }
-
-    .profile-wrapper .hidden{
-        display: flex;
     }
 
     .share-popup{
